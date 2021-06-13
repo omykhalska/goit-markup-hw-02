@@ -1,0 +1,67 @@
+:root {
+  --text-color: #757575;
+  --secondary-text-color: #ffffff;
+  --header-color: #212121;
+  --logo-black-color: #000000;
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #f5f4fa;
+  --dark-bg-color: #2f303a;
+  --contacts-footer-color: rgba(255, 255, 255, 0.6);
+  --accent-color: #2196f3;
+}
+
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--text-color);
+}
+
+/* Общие стили для списков и ссылок */
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* HEADER */
+.logo {
+  color: var(--logo-black-color);
+}
+
+.accent {
+  color: var(--accent-color);
+}
+
+.menu .link {
+  color: var(--header-color);
+}
+
+.menu .current {
+  color: var(--accent-color);
+}
+
+.contacts .link {
+  color: inherit;
+}
+
+.menu .link:hover,
+.menu .link:focus,
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--accent-color);
+}
+
+/* FOOTER */
+.page-footer {
+  background-color: var(--dark-bg-color);
+}
+
+.page-footer .logo,
+.page-footer .address {
+  color: var(--primary-bg-color);
+}
+
+.contacts-footer .link {
+  color: var(--contacts-footer-color);
+}
