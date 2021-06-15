@@ -1,21 +1,26 @@
 :root {
-  --text-color: #757575;
   --secondary-text-color: #ffffff;
-  --header-color: #212121;
+  --title-color: #212121;
   --logo-black-color: #000000;
-  --primary-bg-color: #ffffff;
   --secondary-bg-color: #f5f4fa;
   --dark-bg-color: #2f303a;
   --contacts-footer-color: rgba(255, 255, 255, 0.6);
   --accent-color: #2196f3;
+  --button-hover-color: #188ce8;
 }
 
 body {
-  background-color: var(--primary-bg-color);
-  color: var(--text-color);
+  background-color: #ffffff;
+  color: #757575;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
-/* Общие стили для списков и ссылок */
+/* Общие стили*/
 .list {
   list-style: none;
 }
@@ -24,31 +29,49 @@ body {
   text-decoration: none;
 }
 
+.button {
+  background-color: var(--accent-color);
+  color: var(--secondary-text-color);
+}
+
+.title-color {
+  color: var(--title-color);
+}
+
 /* HEADER */
-.logo {
+.header-logo {
   color: var(--logo-black-color);
 }
 
-.accent {
-  color: var(--accent-color);
+.header-logo,
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
 }
 
-.menu .link {
-  color: var(--header-color);
+.menu,
+.header-contacts {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
-.menu .current {
-  color: var(--accent-color);
+.menu-item {
+  color: var(--title-color);
 }
 
-.contacts .link {
+.header-contacts-link {
   color: inherit;
 }
 
-.menu .link:hover,
-.menu .link:focus,
-.contacts .link:hover,
-.contacts .link:focus {
+.accent,
+.current,
+.menu-item:hover,
+.menu-item:focus,
+.header-contacts-link:hover,
+.header-contacts-link:focus {
   color: var(--accent-color);
 }
 
@@ -57,11 +80,71 @@ body {
   background-color: var(--dark-bg-color);
 }
 
-.page-footer .logo,
-.page-footer .address {
-  color: var(--primary-bg-color);
+.footer-logo,
+.footer-address {
+  color: var(--secondary-text-color);
 }
 
-.contacts-footer .link {
+.footer-contacts {
+  font-style: normal;
+}
+
+.footer-contacts-link {
   color: var(--contacts-footer-color);
+}
+
+/* HERO */
+.hero {
+  background-color: var(--dark-bg-color);
+}
+
+.hero-title {
+  color: var(--secondary-text-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--button-hover-color);
+}
+
+/* FEATURES */
+.features-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+/* WORK and TEAM */
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.member-name,
+.member-post {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.member-name {
+  font-weight: 500;
 }

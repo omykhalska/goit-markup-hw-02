@@ -4,12 +4,48 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
     <title>Портфолио</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- Шапка -->
-    <header></header>
+    <!-- HEADER -->
+    <header class="page-header">
+      <a class="header-logo link" href="./index.html" lang="en"
+        ><span class="accent">Web</span>Studio</a
+      >
+
+      <nav>
+        <ul class="menu list">
+          <li>
+            <a class="menu-item link" href="./index.html">Студия</a>
+          </li>
+          <li>
+            <a class="menu-item link current" href="./portfolio.html"
+              >Портфолио</a
+            >
+          </li>
+          <li><a class="menu-item link" href="">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <ul class="header-contacts list">
+        <li>
+          <a class="header-contacts-link link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <a class="header-contacts-link link" href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </li>
+      </ul>
+    </header>
 
     <!-- Уникальный контент -->
     <main>
@@ -136,7 +172,34 @@
       </section>
     </main>
 
-    <!-- Подвал -->
-    <footer></footer>
+    <!-- FOOTER -->
+    <footer class="page-footer">
+      <a class="footer-logo link" href="./index.html" lang="en"
+        ><span class="accent">Web</span>Studio</a
+      >
+      <address>
+        <ul class="footer-contacts list">
+          <li>
+            <a
+              class="footer-address link"
+              href="https://goo.gl/maps/RkWzNdz5SB7apyNCA"
+              target="_blank"
+              rel="noopener noreferrer"
+              >г. Киев, пр-т Леси Украинки, 26</a
+            >
+          </li>
+          <li>
+            <a class="footer-contacts-link link" href="mailto:info@example.com"
+              >info@example.com</a
+            >
+          </li>
+          <li>
+            <a class="footer-contacts-link link" href="tel:+380991111111"
+              >+38 099 111 11 11</a
+            >
+          </li>
+        </ul>
+      </address>
+    </footer>
   </body>
 </html>
