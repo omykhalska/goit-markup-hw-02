@@ -19,25 +19,29 @@
         ><span class="accent">Web</span>Studio</a
       >
 
-      <nav>
+      <nav class="navigation">
         <ul class="menu list">
-          <li>
-            <a class="menu-item link current" href="./index.html">Студия</a>
+          <li class="menu-item">
+            <a class="menu-link link title-color current" href="./index.html"
+              >Студия</a
+            >
           </li>
-          <li>
-            <a class="menu-item link" href="./portfolio.html">Портфолио</a>
+          <li class="menu-item">
+            <a class="menu-link link" href="./portfolio.html">Портфолио</a>
           </li>
-          <li><a class="menu-item link" href="">Контакты</a></li>
+          <li class="menu-item">
+            <a class="menu-link link" href="">Контакты</a>
+          </li>
         </ul>
       </nav>
 
       <ul class="header-contacts list">
-        <li>
+        <li class="header-contacts-item">
           <a class="header-contacts-link link" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
         </li>
-        <li>
+        <li class="header-contacts-item">
           <a class="header-contacts-link link" href="tel:+380961111111"
             >+38 096 111 11 11</a
           >
@@ -48,43 +52,38 @@
     <main>
       <!-- HERO -->
       <section class="hero">
-        <h1 class="hero-title">
-          Эффективные решения <br />
-          для вашего бизнеса
-        </h1>
-        <button class="hero-button button" type="button">
-          Заказать услугу
-        </button>
+        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+        <button class="modal-btn button" type="button">Заказать услугу</button>
       </section>
 
       <!-- FEATURES -->
       <section class="features">
         <h2 hidden>Преимущества WebStudio</h2>
         <ul class="features-list list">
-          <li>
+          <li class="features-item">
             <h3 class="features-title title-color">Внимание к деталям</h3>
-            <p>
+            <p class="description">
               Идейные соображения, а также начало повседневной работы по
               формированию позиции.
             </p>
           </li>
-          <li>
+          <li class="features-item">
             <h3 class="features-title title-color">Пунктуальность</h3>
-            <p>
+            <p class="description">
               Задача организации, в особенности же рамки и место обучения кадров
               влечет за собой.
             </p>
           </li>
-          <li>
+          <li class="features-item">
             <h3 class="features-title title-color">Планирование</h3>
-            <p>
+            <p class="description">
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
-          <li>
+          <li class="features-item">
             <h3 class="features-title title-color">Современные технологии</h3>
-            <p>
+            <p class="description">
               Значимость этих проблем настолько очевидна, что реализация
               плановых заданий.
             </p>
@@ -96,24 +95,27 @@
       <section class="work">
         <h2 class="section-title title-color">Чем мы занимаемся</h2>
         <ul class="work-list list">
-          <li>
+          <li class="work-list-item">
             <img
+              class="work-pic"
               src="./images/services/service_1.jpg"
               alt="разработчик пишет код"
               width="370"
               height="294"
             />
           </li>
-          <li>
+          <li class="work-list-item">
             <img
+              class="work-pic"
               src="./images/services/service_2.jpg"
               alt="разработчик оптимизирует сайт для мобильных устройств"
               width="370"
               height="294"
             />
           </li>
-          <li>
+          <li class="work-list-item">
             <img
+              class="work-pic"
               src="./images/services/service_3.jpg"
               alt="разработчик подбирает цветовую схему для сайта"
               width="370"
@@ -124,11 +126,12 @@
       </section>
 
       <!-- TEAM -->
-      <section class="members">
+      <section class="team-members">
         <h2 class="section-title title-color">Наша команда</h2>
         <ul class="member-list list">
-          <li>
+          <li class="member-item">
             <img
+              class="member-photo"
               src="./images/team/igor.jpg"
               alt="Игорь Демьяненко"
               width="270"
@@ -137,8 +140,9 @@
             <h3 class="member-name title-color">Игорь Демьяненко</h3>
             <p class="member-post" lang="en">Product Designer</p>
           </li>
-          <li>
+          <li class="member-item">
             <img
+              class="member-photo"
               src="./images/team/olga.jpg"
               alt="Ольга Репина"
               width="270"
@@ -147,8 +151,9 @@
             <h3 class="member-name title-color">Ольга Репина</h3>
             <p class="member-post" lang="en">Frontend Developer</p>
           </li>
-          <li>
+          <li class="member-item">
             <img
+              class="member-photo"
               src="./images/team/nikolay.jpg"
               alt="Николай Тарасов"
               width="270"
@@ -157,8 +162,9 @@
             <h3 class="member-name title-color">Николай Тарасов</h3>
             <p class="member-post" lang="en">Marketing</p>
           </li>
-          <li>
+          <li class="member-item">
             <img
+              class="member-photo"
               src="./images/team/mihail.jpg"
               alt="Михаил Ермаков"
               width="270"
@@ -177,8 +183,8 @@
         ><span class="accent">Web</span>Studio</a
       >
       <address>
-        <ul class="footer-contacts list">
-          <li>
+        <ul class="footer-contacts-list list">
+          <li class="footer-contacts-item">
             <a
               class="footer-address link"
               href="https://goo.gl/maps/RkWzNdz5SB7apyNCA"
@@ -187,12 +193,12 @@
               >г. Киев, пр-т Леси Украинки, 26</a
             >
           </li>
-          <li>
+          <li class="footer-contacts-item">
             <a class="footer-contacts-link link" href="mailto:info@example.com"
               >info@example.com</a
             >
           </li>
-          <li>
+          <li class="footer-contacts-item">
             <a class="footer-contacts-link link" href="tel:+380991111111"
               >+38 099 111 11 11</a
             >
